@@ -20,6 +20,7 @@
       </keep-alive>
     </div>
     <TabBar />
+    <router-view name="detail" />
   </div>
 </template>
 
@@ -41,7 +42,7 @@ export default {
         if (msg === "ok") {
           var nm = res.data.data.nm;
           var id = res.data.data.id;
-          
+
           if (this.$store.state.city.id == id) {
             return;
           }

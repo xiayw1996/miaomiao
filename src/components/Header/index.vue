@@ -1,11 +1,11 @@
 <template>
   <header id="header">
-    <h1>{{ title }}</h1>
+    <slot></slot> <h1>{{ title }}</h1>
   </header>
 </template>
 
 <script>
-import { stringify } from "querystring";
+// import { stringify } from "querystring";
 export default {
   name: "Header",
   props: {
